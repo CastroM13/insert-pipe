@@ -1,0 +1,45 @@
+{
+  "name": "insert-pipe",
+  "displayName": "Insert Pipe",
+  "description": "VSCode extension to insert the Unicode pipe character.",
+  "version": "1.0.0",
+  "publisher": "CastroM13",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "activationEvents": [
+    "onCommand:extension.insertPipe"
+  ],
+  "main": "./out/extension.js",
+  "repository": {
+    "type": "git",
+    "url": "git://https://github.com/CastroM13/insert-pipe.git"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.insertPipe",
+        "title": "Insert: Pipe"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.insertPipe",
+        "key": "ctrl+shift+l",
+        "mac": "cmd+shift+l"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ."
+  },
+  "devDependencies": {
+    "@types/node": "^16.0.0",
+    "typescript": "^4.9.5",
+    "vscode": "^1.1.37"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
